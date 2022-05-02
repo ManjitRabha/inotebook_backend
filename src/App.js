@@ -14,12 +14,13 @@ function App() {
     <>
       <NoteState>
         <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route index path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-          </Routes>
-
+          <div className="container">
+            <Navbar />
+            <Routes>
+              <Route index path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+            </Routes>
+          </div>
         </BrowserRouter>,
       </NoteState>
     </>

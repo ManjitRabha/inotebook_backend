@@ -31,4 +31,4 @@ app.use('/api/notes', require('./routes/notes'))
 
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`APP IS RUNNING AT ${PORT}`));
+app.listen(PORT, () => console.log(`iNotebook app is running ${PORT}`));
