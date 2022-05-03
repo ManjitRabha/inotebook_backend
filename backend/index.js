@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
+var cors = require('cors')
 const mongoose = require('mongoose');
 
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }
+app.use(cors())
 app.use(express.json())
 
 // Mongo Db Connection

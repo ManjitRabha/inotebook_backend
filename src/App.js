@@ -4,11 +4,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import About from './components/About';
 import NoteState from './context/notes/NoteState';
+import Alert from './components/Alert';
 
+import Home from './components/Home'
 function App() {
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
         <BrowserRouter>
           <div className="container">
             <Navbar />
+            <Alert message={"This is amazing react course"} />
             <Routes>
               <Route index path="/" element={<Home />} />
               <Route path="about" element={<About />} />
@@ -23,6 +26,7 @@ function App() {
           </div>
         </BrowserRouter>,
       </NoteState>
+
     </>
   );
 }
